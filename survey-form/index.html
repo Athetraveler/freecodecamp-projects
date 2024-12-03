@@ -1,0 +1,200 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Game Play</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1 id="title">HTML Game Play</h1>
+    <p id="description">HTML survey made for fun and practice. This means absolutely nothing to our relationship.</p>
+    <form id="survey-form" action="/blackhole.php" method="post">
+    <!--name-->
+      <label id="name-label" for="name">What should I call you?</label>
+      <input id="name" name="name" class="top" type="text" required placeholder="Write your name here">
+    <!--email-->
+      <label id="email-label" for="email">Email address</label>
+      <input id="email" name="email" class="top" type="email" required placeholder="For further un-contact">
+    <!--years-->
+      <label id="number-label" for="number">How many years have you been here?</label>
+      <input id="number" name="years" class="top" type="number" min="1" max="100" placeholder="The years that has passed">
+    <!--dropdown-->
+      <label for="dropdown">Do you like it?</label>
+      <select id="dropdown" name="rate-your-world" class="top">
+        <option value="maybe">Maybe</option>
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+        <option value="wish">Wish it could be better</option>
+        <option value="not-done-much">I still have so much to see</option>
+      </select>
+    <!--radio-->
+      <fieldset>
+        <legend>Have you seen your eyes lately?</legend>
+        <input id="yes-great" name="your-eyes" type="radio" value="yes-great">
+        <label for="yes-great" class="choice-text">Yes, it sparks in sunlight</label></br>
+        <input id="yes-sad" name="your-eyes" type="radio" value="yes-sad">
+        <label for="yes-sad" class="choice-text">Yes, they are listless and sunken ones</label></br>
+        <input id="disassociation" name="your-eyes" type="radio" value="disassociation">
+        <label for="disassociation" class="choice-text">Yes, it's almost like the eyes of someone else</label></br>
+        <input id="no-dont-want" name="your-eyes" type="radio" value="no-dont-want">
+        <label for="no-dont-want" class="choice-text">No, I hate the eyes that look back</label></br>
+        <input id="no-dont-dare" name="your-eyes" type="radio" value="no-dont-dare">
+        <label for="no-dont-dare" class="choice-text">No, I wouldn't dare</label>
+      </fieldset>
+    <!--checkbox-->
+      <fieldset>
+        <legend>The past lives within you</legend>
+        <input id="no-dont" name="past1" type="checkbox" value="no">
+        <label for="no-dont" class="choice-text">No, it does not</label></br>
+      <input id="buried" name="past2" type="checkbox" value="buried">
+      <label for="buried" class="choice-text">Deep in the mind where I buried it</label></br>
+      <input id="behind" name="past3" type="checkbox" value="behind">
+      <label for="behind" class="choice-text">It always lurked behind</label></br>
+      <input id="control" name="past4" type="checkbox" value="control">
+      <label for="control" class="choice-text">It controls my live</label></br>
+      <input id="live" name="past5" type="checkbox" value="live">
+      <label for="live" class="choice-text">I try my best to live with it</label>
+    </fieldset>
+    <!--textpost-->
+      <label for="text">Say something, anything</label>
+      <textarea id="text" name="silence" rows="6"></textarea>
+      <input id="submit" type="submit" value="Say Goodbye">
+    </form>
+  </body>
+  <footer>
+    <p>My last note is to ask you to be alive.</p>
+  </footer>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: #1e4767;
+  font-family: Sitka Small;
+  color: #e7f0f8;
+  margin: 0 100px;
+}
+
+h1{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 35px;
+}
+
+#description {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.top, textarea {
+  display: block;
+  margin: 7px 0;
+  width: 100%;
+  padding: 7px 7px;
+  background-color: #3d597160;
+  border: 2px solid #e7f0f860; 
+  color: #e7f0f8;
+  font-family: Sitka Small;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #e7f0f8;
+  font-family: Sitka Small;
+  font-size: 16px;
+}
+
+input[type='number'] { 
+  appearance: textfield; 
+}
+
+option{
+  color: #e7f0f8;
+  background-color: #3d597160;
+  font-family: Sitka Small;
+  font-size: 16px;
+}
+
+textarea:focus, input:focus {
+  color: #e7f0f8;
+  font-family: Sitka Small;
+  font-size: 16px;
+}
+
+fieldset {
+  margin: 7px 0;
+  border: none;
+  padding: 7px 0;
+}
+
+input[type='radio'] {
+  appearance: none;
+  background-color: #3d597160;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #e7f0f860;
+  border-radius: 50%;
+  transform: translateY(0.090em);
+  cursor: pointer;
+}
+
+input[type='radio']:hover{
+  border-width: 0;
+  background-color: #e7f0f8;
+}
+
+input[type='radio']:checked {
+  background-color: #e7f0f8;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  background-color: #3d597160;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #e7f0f860;
+  transform: translateY(0.400em);
+  cursor: pointer;
+}
+
+input[type='checkbox']:hover{
+  border-width: 0;
+}
+
+input[type='checkbox']:checked {
+  background-color: #e7f0f8;
+}
+
+input[type='submit'] {
+  margin: 7px 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #3d597160;
+  border: none;
+  color: #e7f0f8;
+  font-family: Sitka Small;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #e7f0f8;
+  color: #1e4767;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+} 
+ 
+
+** end of undefined **
+
