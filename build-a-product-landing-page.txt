@@ -1,0 +1,174 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mock HTML product page">
+    <title>HTML Game Play 4</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://drive.google.com/thumbnail?id=1AvavPJHNZ8Rrfq7Y2Ysu98aB9KyDPzGp" alt="website logo">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#why-choose-us">Why Choose Us</a></li>
+          <li><a class="nav-link" href="#demonstration">Demonstration</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#newsletter">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="why-choose-us">
+      <div class="section-divide numbered-list">
+        <h3>Why Choose Us</h3>
+        <div>No, you really don't have to. I don't sell anything here.</div>
+        <div>Although I did have a plan to sell some of my secondhand items, I found being on a given end of money transaction too anxiety-inducing.</div>
+        <div>I know I won't have any money to live if I keep thinking like this but, seriously, I can't exist in the society. Please just murder me or something.</div>
+      </div>
+    </section>
+    <section id="demonstration">
+      <div class="section-divide">
+        <h3>Some Funny Video</h3>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/R7ghDhpCLKM?si=qZ-OCftj3khtsQ8s" title="funny game show answer video" frameborder="0" allow="encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="section-divide">
+        <h3>Pricing</h3>
+        <p>I hardly think anyone will take anything of me for a price...</p>
+      </div>
+    </section>
+    <section id="newsletter">
+      <div class="section-divide">
+        <h3>Sign Up for Our Newsletter</h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input type="email" id="email" name="email" placeholder="Enter your email address">
+          <input type="submit" id="submit" value="Subscibe">
+         </form>
+      </div>
+    </section>
+    <footer>
+      <p>athetraveler 2024-2024. All right reserved.
+    </footer>
+    <main> 
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1.5rem;
+  background-color: #ffffff;
+
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+}
+
+#nav-bar li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#nav-bar a:hover {
+  color:#e3af14;
+}
+
+@media only screen and (max-width: 680px) {
+  header {
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+#why-choose-us, #pricing {
+  background: #f0e8a3;
+  padding: 0.5rem 0;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.section-divide {
+  box-sizing: border-box;
+  margin: 0 1.5rem 0.5rem;
+}
+
+div.numbered-list {
+  counter-reset: list-number;
+}
+.numbered-list div:before {
+  counter-increment: list-number;
+  content: counter(list-number);
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3af14;
+  border-radius: 50%;
+}
+
+#demonstration, #newsletter {
+  display: flex;
+  justify-content: center;
+}
+
+#email {
+  padding: 5px 20px;
+}
+
+#email:focus {
+  border: 2px solid #e3af14;
+  outline: none;
+}
+
+#submit {
+  padding: 7px 15px;
+  border: none;
+  background-color: #e3af14;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+}
+
+** end of undefined **
+
